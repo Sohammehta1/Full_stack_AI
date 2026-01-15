@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Body
-from ollama import Client
+import ollama
 
 app =FastAPI()
-client = Client(
+client = ollama.Client(
     host="http://localhost:11434"
 )
 
